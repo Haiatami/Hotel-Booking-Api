@@ -7,12 +7,11 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.nio.file.AccessDeniedException;
 
 @Component
 @RequiredArgsConstructor
@@ -23,7 +22,7 @@ public class CustomAccessDenialHandler implements AccessDeniedHandler {
     public void handle(HttpServletRequest request,
                        HttpServletResponse response,
                        AccessDeniedException accessDeniedException)
-            throws IOException, ServletException{
+            throws IOException, ServletException {
         Response errorResponse = Response.builder()
                 .status(HttpStatus.FORBIDDEN.value()) // 401 invid token
                 .message(accessDeniedException.getMessage())
