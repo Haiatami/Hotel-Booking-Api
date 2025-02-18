@@ -40,7 +40,7 @@ public class Booking {
 
     private BigDecimal totalPrice;
 
-    private String bookingRefrence;
+    private String bookingReference;
 
     private LocalDateTime createdAt;
 
