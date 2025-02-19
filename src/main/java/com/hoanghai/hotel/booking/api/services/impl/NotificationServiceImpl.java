@@ -1,4 +1,4 @@
-package com.hoanghai.hotel.booking.api.services.imp;
+package com.hoanghai.hotel.booking.api.services.impl;
 
 import com.hoanghai.hotel.booking.api.dtos.NotificationDTO;
 import com.hoanghai.hotel.booking.api.entities.Notification;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class NotificationServiceImp implements NotificationService {
+public class NotificationServiceImpl implements NotificationService {
     private final JavaMailSender javaMailSender;
 
     private final NotificationRepository notificationRepository;

@@ -4,6 +4,7 @@ import com.hoanghai.hotel.booking.api.enums.UserRole;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 @Entity
 @Data
 @Table(name = "users")
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {

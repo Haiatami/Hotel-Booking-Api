@@ -1,5 +1,6 @@
 package com.hoanghai.hotel.booking.api.dtos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.hoanghai.hotel.booking.api.enums.UserRole;
@@ -25,6 +26,7 @@ public class UserDTO {
 
     private String email;
 
+    @JsonIgnore
     private String password;
 
     private String firstName;
