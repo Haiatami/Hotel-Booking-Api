@@ -1,6 +1,5 @@
 package com.hoanghai.hotel.booking.api.services;
 
-import com.hoanghai.hotel.booking.api.dtos.BookingDTO;
 import com.hoanghai.hotel.booking.api.entities.BookingReference;
 import com.hoanghai.hotel.booking.api.repositories.BookingReferenceRepository;
 import lombok.RequiredArgsConstructor;

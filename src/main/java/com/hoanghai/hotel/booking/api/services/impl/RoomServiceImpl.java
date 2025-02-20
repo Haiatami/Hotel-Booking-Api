@@ -7,7 +7,6 @@ import com.hoanghai.hotel.booking.api.enums.RoomType;
 import com.hoanghai.hotel.booking.api.exceptions.InvalidBookingStateAndDateException;
 import com.hoanghai.hotel.booking.api.exceptions.NotFoundException;
 import com.hoanghai.hotel.booking.api.repositories.RoomRepository;
-import com.hoanghai.hotel.booking.api.repositories.UserRepository;
 import com.hoanghai.hotel.booking.api.services.RoomService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +17,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
-import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;

@@ -2,7 +2,6 @@ package com.hoanghai.hotel.booking.api.controllers;
 
 import com.hoanghai.hotel.booking.api.dtos.BookingDTO;
 import com.hoanghai.hotel.booking.api.dtos.Response;
-import com.hoanghai.hotel.booking.api.entities.Booking;
 import com.hoanghai.hotel.booking.api.services.BookingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

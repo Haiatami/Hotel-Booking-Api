@@ -2,7 +2,6 @@ package com.hoanghai.hotel.booking.api.security;
 
 import com.hoanghai.hotel.booking.api.exceptions.CustomAccessDenialHandler;
 import com.hoanghai.hotel.booking.api.exceptions.CustomAuthenticationEntryPoint;
-import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;

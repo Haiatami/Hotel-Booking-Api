@@ -2,13 +2,8 @@ package com.hoanghai.hotel.booking.api.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.hoanghai.hotel.booking.api.entities.User;
 import com.hoanghai.hotel.booking.api.enums.PaymentGateway;
 import com.hoanghai.hotel.booking.api.enums.PaymentStatus;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

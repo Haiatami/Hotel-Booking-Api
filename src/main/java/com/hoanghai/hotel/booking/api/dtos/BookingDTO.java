@@ -36,7 +36,7 @@ public class BookingDTO {
 
     private BigDecimal totalPrice;
 
-    private String bookingRefrence;
+    private String bookingReference;
 
     private LocalDateTime createdAt;
 
