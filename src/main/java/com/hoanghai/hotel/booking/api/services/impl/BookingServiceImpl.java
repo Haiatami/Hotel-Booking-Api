@@ -111,7 +111,7 @@ public class BookingServiceImpl implements BookingService {
                 .recipient(currentUser.getEmail())
                 .subject("Booking Confirmation")
                 .body(String.format("Your booking has been created successfully. Please proceed with your payment using the payment link below" +
-                        "\n\nn%s", paymentUrl))
+                        "\n\n%s", paymentUrl))
                 .bookingReference(bookingReference)
                 .build();
 

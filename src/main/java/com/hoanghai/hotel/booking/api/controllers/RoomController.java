@@ -83,7 +83,7 @@ public class RoomController {
             @RequestParam LocalDate checkInDate,
             @RequestParam LocalDate checkOutDate,
             @RequestParam(required = false) RoomType roomType
-            ) {
+    ){
         return ResponseEntity.ok(roomService.getAvailableRooms(checkInDate, checkOutDate, roomType));
     }
 

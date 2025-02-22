@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  mssql:
+      image: mcr.microsoft.com/mssql/server:2022-latest
+      container_name: mssql
+      environment:
+        ACCEPT_EULA: "Y"
+        MSSQL_SA_PASSWORD: "PASSWORD"
+        MSSQL_PID: "Developer"
+        MSSQL_TCP_PORT: "1433"
+      ports:
+        - "1433:1433"
+      volumes:
+        - D:/database-docker/mssql/data:/var/opt/mssql/data
+        - D:/database-docker/mssql/log:/var/opt/mssql/log
+        - D:/database-docker/mssql/secrets:/var/opt/mssql/secrets
+      networks:
+        - database-network
+
+networks:
+  database-network:
+    driver: bridge
